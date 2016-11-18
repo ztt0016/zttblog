@@ -75,6 +75,68 @@
     <div class="columns">
         <div class="column two-thirds">
             
+                  <article id="post-webpack" class="repo-list">
+    <div class="repo-list-item" >
+      <h3 class="repo-list-name" itemprop="name">
+        
+      </h3>
+      <div class="repo-list-description">
+        
+          <h1 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a><strong>webpack</strong></h1><ol>
+<li><p>webpack即可以识别AMD commonJs ES6模块的工具，又可以进行打包同时可以建立自己的工作流（module bundler模块打包                     工具）可以用于模块的打包、压缩、混淆。<br>2.用于javascript模块管理的两大规范：<br> 1&gt;CommonJs模块的同步加载，用于Node.js，<br> 2&gt;AMD异步加载，通过requirejs用于前端。<br>3.静态资源：Javascript、css、图片、Jade等。<br>4.webpack的特性：<br> 1&gt;丰富的插件–优化压缩代码<br> 2&gt;有强劲的性能–开发时打开浏览器和加载文件速度加快<br> 3&gt;loaders–将复杂依赖关系的js或者一些图片、css、编译打包成你即将部署到公网的一些文件<br> 4&gt;支持–AMD、Commonjs<br> 5&gt;减少初始化的加载时间<br> 6&gt;优化<br> 7&gt;Development Tools:支持http服务器、sourceMap<br> 8&gt;多任务、多目标<br>5.有独立配置的文件webpack.config.js<br>6.webpack使用一步IO，并且具有多级缓存<br>7.安装webpack与运行：<br> 1&gt;创建工程目录结构：<br> 01.在index.html中写入：</p>
+<pre><code>&lt;script  src=&quot;app.js&quot;&gt;&lt;/script&gt;
+</code></pre><p> 2&gt;引入webpack依赖</p>
+<pre><code>01.在工程中打开命令窗口输入命令：npm install -g webpack（下载全局的webpack）;
+02.输入命令：npm install webpack --save-dev（下载本地webpack）;
+03.输入npm info webpack（查看webpack的版本信息）；
+</code></pre><p>  3&gt;在工程中创建以下目录：</p>
+<pre><code>01.webpack.base.config.js;
+02.webpack.develop.config.js;
+03.webpack.publish.config.js;
+</code></pre><p> 4&gt;在web.develop.config.js中配置：</p>
+<pre><code>var path = require (&apos;path&apos; );
+module.exports = {
+                            entry:path. resolve( __dirname, &apos;app.js&apos;),
+      output: {
+                                path : path. resolve( __dirname, &apos;develop/js&apos;),
+             filename : &apos;bundle.js&apos; ,
+      }                                                        }
+</code></pre><p> 5&gt;在命令窗口输入webpack –config web.develop.config.js<br> 6&gt;在app.js中写入：document.getelementById（”haha”).innerHTML = “有点难度!!!”;<br> 7&gt;在package.json上写入：webpack –config web.develop.config.js<br> 9&gt;为发布目录启动服务：</p>
+<pre><code>01.在命令窗口输入：
+</code></pre><p>npm i webpack-dev-server –save<br>（安装webpack-dev- server）</p>
+<pre><code>02.在package.json上添加：&quot;develop&quot;: &quot;webpack-dev-server  --config web.develop.config.js --devtool eval --progress --colors --hot --content-base publish&quot;
+           (手动的在publish中添加index.html，并且把src=&quot;app.js&quot;改为src=&quot;bundle.js&quot;)
+              03.配置web.develop.config.js:
+</code></pre><p>var path = require (‘path’ );<br>module.exports = {<br>entry:[</p>
+<pre><code>&apos;webpack/hot/dev-server&apos; ,
+&apos;webpack-dev-server/client?http://localhost:8080&apos; ,
+path .resolve (__dirname ,&apos;app.js&apos; )
+</code></pre><p>],<br>output: {</p>
+<pre><code>path : path. resolve( __dirname, &apos;develop&apos;),
+filename : &apos;bundle.js&apos; ,
+</code></pre><p>  }<br>}1. webpack即可以识别AMD commonJs ES6模块的工具，又可以进行打包同时可以建立自己的工作流（module bundler模块打包 工具）可pt src=”bundle.js”&gt;</p>
+<pre><code>05.在命令窗口输入：npm run develop
+</code></pre></li>
+</ol>
+
+        
+      </div>
+      <p class="repo-list-meta">
+        <span class="meta-info">
+          <span class="octicon octicon-calendar"></span>
+           <time datetime="2016-11-18T08:34:26.474Z" itemprop="datePublished">2016-11-18</time>
+        </span>
+
+        
+      
+        <!--
+          
+        -->
+
+      </p>
+    </div>
+  </article>
+            
                   <article id="post-hello-world" class="repo-list">
     <div class="repo-list-item" >
       <h3 class="repo-list-name" itemprop="name">
