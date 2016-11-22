@@ -1,339 +1,230 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <link rel="icon" href="/favicon.ico">
-  <title>Hexo</title>
-  <link rel="stylesheet" href="/zttblog/css/style.css">
-  <link rel="stylesheet" href="/zttblog/lib/fancybox/jquery.fancybox-1.3.4.css">
-  <!--在这里倒入jquery 方便处理部分页面的jquery-->
-  <script src="https://cdn.staticfile.org/jquery/1.7/jquery.min.js" type="text/javascript" ></script>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Hexo</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="爱好电影、音乐和书籍，尤其喜爱许巍、李健及王小波。擅长Java，JavaScript，喜欢用NodeJs编写一些有趣的应用。关注互联网、科技、敏捷开发以及JavaNIO。">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hexo">
+    <meta name="twitter:description" content="爱好电影、音乐和书籍，尤其喜爱许巍、李健及王小波。擅长Java，JavaScript，喜欢用NodeJs编写一些有趣的应用。关注互联网、科技、敏捷开发以及JavaNIO。">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Hexo">
+    <meta property="og:description" content="爱好电影、音乐和书籍，尤其喜爱许巍、李健及王小波。擅长Java，JavaScript，喜欢用NodeJs编写一些有趣的应用。关注互联网、科技、敏捷开发以及JavaNIO。">
+
+    
+    <meta name="author" content="John Doe">
+    
+    <link rel="stylesheet" href="/zttblog/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/favicon.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="Hexo" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://yoursite.com"/>
+
+    
+    <link rel="author" href="https://www.google.com/+LenboMa"/>
+    
 </head>
-<body class="home">
-	<header class="site-header navfixed-false">
-  <div class="container">
-      <h1><a href="/zttblog/" title="Hexo"><span class="octicon octicon-mark-github"></span> Hexo</a></h1>
-      <nav class="site-header-nav" role="navigation">
+
+<body class="home-template no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover " style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/zttblog/" title="前往 Hexo 的主页"><img src="/images/logo2.jpg" width="80" alt="Hexo logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/zttblog/" title="link to homepage for Hexo">Hexo</a></h1>
         
-              
-              <a href="/zttblog/"  class=" site-header-nav-item hvr-underline-from-center" title="首页">首页</a>
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description"></p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="/projects">项目作品</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/lenbo-ma" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
         
-              
-              <a href="/zttblog/categories/"  class=" site-header-nav-item hvr-underline-from-center" title="分类">分类</a>
-        
-              
-              <a href="/zttblog/open-source/"  class=" site-header-nav-item hvr-underline-from-center" title="开源项目">开源项目</a>
-        
-              
-              <a href="/zttblog/message/"  class=" site-header-nav-item hvr-underline-from-center" title="留言板">留言板</a>
-        
-      </nav>
+
+  <!-- Google Plus -->
+  
+  <li class="navigation__item">
+    <a href="https://www.google.com/+LenboMa" title="Google+" target="_blank">
+      <i class='social fa fa-google-plus-square'></i>
+      <span class="label">Google+</span>
+    </a>
+  </li>
+
+
+<!-- Facebook -->
+
+  <li class="navigation__item">
+    <a href="http://www.facebook.com/yang.desheng.me" title="上Facebook找我" target="_blank">
+      <i class='social fa fa-facebook'></i>
+      <span class="label">Facebook</span>
+    </a>
+  </li>
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com/lenbo_" title="上Twitter找我" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-blue"></div>
   </div>
 </header>
 
-	<section class="banner-false">
-    <div class="collection-head">
-        <div class="container">
-            <div class="collection-title">
-                <h1 class="collection-header" id="site-description">
-                    
-                </h1>
-                <div class="collection-info">
-                    
-                    
-                        <span class="meta-info">
-                            
-                                <span class="octicon octicon-location">
-                                   
-                                        ZhengZhou, China
-                                    
-                                </span>
-                                
-                            
-                        </span>
-                    
-                        <span class="meta-info">
-                            
-                                <span class="octicon octicon-mark-github">
-                                   
-                                </span>
-                                
-                                    <a href="http://github.com/ztt0016" target="_blank">ztt0016</a>
-                                
-                            
-                        </span>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-	   <section class="container">
-    <div class="columns">
-        <div class="column two-thirds">
-            
-                  <article id="post-webpack" class="repo-list">
-    <div class="repo-list-item" >
-      <h3 class="repo-list-name" itemprop="name">
-        
-      </h3>
-      <div class="repo-list-description">
-        
-          <h1 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a><strong>webpack</strong></h1><ol>
-<li><p>webpack即可以识别AMD commonJs ES6模块的工具，又可以进行打包同时可以建立自己的工作流（module bundler模块打包                     工具）可以用于模块的打包、压缩、混淆。<br>2.用于javascript模块管理的两大规范：<br> 1&gt;CommonJs模块的同步加载，用于Node.js，<br> 2&gt;AMD异步加载，通过requirejs用于前端。<br>3.静态资源：Javascript、css、图片、Jade等。<br>4.webpack的特性：<br> 1&gt;丰富的插件–优化压缩代码<br> 2&gt;有强劲的性能–开发时打开浏览器和加载文件速度加快<br> 3&gt;loaders–将复杂依赖关系的js或者一些图片、css、编译打包成你即将部署到公网的一些文件<br> 4&gt;支持–AMD、Commonjs<br> 5&gt;减少初始化的加载时间<br> 6&gt;优化<br> 7&gt;Development Tools:支持http服务器、sourceMap<br> 8&gt;多任务、多目标<br>5.有独立配置的文件webpack.config.js<br>6.webpack使用一步IO，并且具有多级缓存<br>7.安装webpack与运行：<br> 1&gt;创建工程目录结构：<br> 01.在index.html中写入：</p>
-<pre><code>&lt;script  src=&quot;app.js&quot;&gt;&lt;/script&gt;
-</code></pre><p> 2&gt;引入webpack依赖</p>
-<pre><code>01.在工程中打开命令窗口输入命令：npm install -g webpack（下载全局的webpack）;
-02.输入命令：npm install webpack --save-dev（下载本地webpack）;
-03.输入npm info webpack（查看webpack的版本信息）；
-</code></pre><p>  3&gt;在工程中创建以下目录：</p>
-<pre><code>01.webpack.base.config.js;
-02.webpack.develop.config.js;
-03.webpack.publish.config.js;
-</code></pre><p> 4&gt;在web.develop.config.js中配置：</p>
-<pre><code>var path = require (&apos;path&apos; );
-module.exports = {
-                            entry:path. resolve( __dirname, &apos;app.js&apos;),
-      output: {
-                                path : path. resolve( __dirname, &apos;develop/js&apos;),
-             filename : &apos;bundle.js&apos; ,
-      }                                                        }
-</code></pre><p> 5&gt;在命令窗口输入webpack –config web.develop.config.js<br> 6&gt;在app.js中写入：document.getelementById（”haha”).innerHTML = “有点难度!!!”;<br> 7&gt;在package.json上写入：webpack –config web.develop.config.js<br> 9&gt;为发布目录启动服务：</p>
-<pre><code>01.在命令窗口输入：
-</code></pre><p>npm i webpack-dev-server –save<br>（安装webpack-dev- server）</p>
-<pre><code>02.在package.json上添加：&quot;develop&quot;: &quot;webpack-dev-server  --config web.develop.config.js --devtool eval --progress --colors --hot --content-base publish&quot;
-           (手动的在publish中添加index.html，并且把src=&quot;app.js&quot;改为src=&quot;bundle.js&quot;)
-              03.配置web.develop.config.js:
-</code></pre><p>var path = require (‘path’ );<br>module.exports = {<br>entry:[</p>
-<pre><code>&apos;webpack/hot/dev-server&apos; ,
-&apos;webpack-dev-server/client?http://localhost:8080&apos; ,
-path .resolve (__dirname ,&apos;app.js&apos; )
-</code></pre><p>],<br>output: {</p>
-<pre><code>path : path. resolve( __dirname, &apos;develop&apos;),
-filename : &apos;bundle.js&apos; ,
-</code></pre><p>  }<br>}1. webpack即可以识别AMD commonJs ES6模块的工具，又可以进行打包同时可以建立自己的工作流（module bundler模块打包 工具）可pt src=”bundle.js”&gt;</p>
-<pre><code>05.在命令窗口输入：npm run develop
-</code></pre></li>
-</ol>
-
-        
-      </div>
-      <p class="repo-list-meta">
-        <span class="meta-info">
-          <span class="octicon octicon-calendar"></span>
-           <time datetime="2016-11-18T08:34:26.474Z" itemprop="datePublished">2016-11-18</time>
-        </span>
-
-        
-      
-        <!--
-          
-        -->
-
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <div class="main-post-list">
+    
+  <ol class="post-list">
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/zttblog/2016/11/18/webpack/" title="link to post.title"></a></h2>
+      <p class="excerpt">
+    
+      webpack
+webpack即可以识别AMD commonJs ES6模块的工具，又可以进行打包同时可以建立自己的工作流（module bundler模块打包                     工具）可以用于模块的打包、压缩、混淆。2.用于javascript模块管理的两大规范： 1&amp;gt;CommonJs模块的同步加载，用于Node.js， 2&amp;gt;AMD异步加载，通过requirejs用于前端。3.静态资源：Javascript、css、图片、Jade等。4.webpack的特性：
+    &hellip;
       </p>
-    </div>
-  </article>
-            
-                  <article id="post-hello-world" class="repo-list">
-    <div class="repo-list-item" >
-      <h3 class="repo-list-name" itemprop="name">
-        
-      </h3>
-      <div class="repo-list-description">
-        
-          <h1 id="git远程提交"><a href="#git远程提交" class="headerlink" title="git远程提交"></a>git远程提交</h1><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
-<li>建一个项目，在项目中打开命令窗口，输入git init对git进行初始化</li>
-<li>在项目中添加文件夹（如：css js 并在文件夹中添加内容main.css main.js,）输入git status查看git的状态，查看文件夹是否添加，如果没有添加，输入git add . 进行添加</li>
-<li>在命令窗口输入git commit -m “任意内容 “（这是进行日志提交）</li>
-<li>将本地文件上传到远程仓库中（自己创建的githhub的仓库）在窗口中输入git remote add origin +github仓库的地址</li>
-<li>在窗口中输入remote -v</li>
-<li>在窗口中输入git push -u origin master（将本地文件推送到远程仓库中）</li>
-</ol>
-<h2 id="创建忽略清单文件"><a href="#创建忽略清单文件" class="headerlink" title="创建忽略清单文件"></a>创建忽略清单文件</h2><ol>
-<li>在窗口中输入（echo “ “ &gt;.gitignore）(在本地项目中会自动生成gitignore文件，并在。gitignore）</li>
-<li>输入git status查看git的状态</li>
-<li>如果没有则添加输入git add .</li>
-</ol>
-
-        
-      </div>
-      <p class="repo-list-meta">
-        <span class="meta-info">
-          <span class="octicon octicon-calendar"></span>
-           <time datetime="2016-11-17T02:28:39.959Z" itemprop="datePublished">2016-11-17</time>
-        </span>
-
-        
-      
-        <!--
-          
-        -->
-
+      <div class="post-list__meta"><time datetime="2016-11-18T08:34:26.474Z" class="post-list__meta--date date">2016-11-18</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;</span><a class="btn-border-small" href="/zttblog/2016/11/18/webpack/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/zttblog/2016/11/17/hello-world/" title="link to post.title"></a></h2>
+      <p class="excerpt">
+    
+      git远程提交步骤
+建一个项目，在项目中打开命令窗口，输入git init对git进行初始化
+在项目中添加文件夹（如：css js 并在文件夹中添加内容main.css main.js,）输入git status查看git的状态，查看文件夹是否添加，如果没有添加，输入git add . 进行添加
+在命令窗口输入git commit -m “任意内容 “（这是进行日志提交）
+将本地文件上传到远程仓库中（自己创建的githhub的仓库）在窗口中输入git remote add origin +git
+    &hellip;
       </p>
-    </div>
-  </article>
-            
-        </div>
-        <div class="column one-third">
-          <h3>Search</h3>
+      <div class="post-list__meta"><time datetime="2016-11-17T02:28:39.959Z" class="post-list__meta--date date">2016-11-17</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;</span><a class="btn-border-small" href="/zttblog/2016/11/17/hello-world/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+  </ol>
 
 
-<div id="site_search">
-	<form action="http://www.google.com/search?" data-site="http://yoursite.com">
-    	<input type="text" id="search_box" name="q" placeholder="Search" style="width: 253px;">
-    	<button type="button" class="btn btn-default" id="site_search_do"><span class="octicon octicon-search"></span></button>
-    </form>
+
 </div>
 
-<ul id="search_results"></ul>
-<h3>Popular Repositories</h3>
 
-    
-    <div class="popular-container"></div>
-    
-    <script type="text/template" id="popular-list-template">
-        <a href="{%=clone_url%}" class="card text-center" target="_blank">
-            <div class="thumbnail">
-                <div class="card-image geopattern" data-pattern-id="{%=name%}">
-                    <div class="card-image-cell">
-                        <h3 class="card-title">
-                            {%=name%}
-                        </h3>
-                    </div>
-                </div>
-                <div class="caption">
-                    <div class="card-description">
-                        <p class="card-text">
-                            {%=description%}
-                        </p>
-                    </div>
-                    <div class="card-text">
-                        <span class="meta-info tooltipped tooltipped-n" aria-label="{%=stargazers_count%} stars">
-                            <span class="octicon octicon-star"></span> {%=stargazers_count%}
-                        </span>
-                        <span class="meta-info tooltipped tooltipped-n" aria-label="{%=forks_count%} forks">
-                            <span class="octicon octicon-git-branch"></span> {%=forks_count%}
-                        </span>
-                        <span class="meta-info tooltipped tooltipped-n" aria-label="最后更新时间：{%=updated_at%}">
-                            <span class="octicon octicon-clock"></span>
-                            <time datetime="{%=updated_at%}">{%=updated_at%}</time>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </script>
 
-    <script src="/zttblog/js/baiduTemplate.js"></script>
-    <script type="text/javascript">
-        var popular_repos = function(){
-
-            var baiduTpl = new Object();
-
-            var handleTpl = function(){
-                baiduTpl.popular_list = baidu.template("popular-list-template");
-            };
-
-            var handleGithub = function(){
-                var popularContainer = $(".popular-container");
-
-                var repos = "ysale-sms,scude-answer,cordova-plugin-alipay".split(",");
-                for(var i in repos){
-                    var name = repos[i];
-                    $.get("https://api.github.com/repos/ztt0016/"+name,handle);
-                }
-
-                function handle(result){
-                    result.updated_at = result.updated_at.split("T")[0];
-                    if(result){
-                        var html = baiduTpl.popular_list(result);
-                        popularContainer.append(html);
-                        $(".geopattern").each(function(){           
-                            $(this).geopattern($(this).data('pattern-id'));
-                        });
-                    }
-                }
-            };
-
-            return {
-                init:function(){
-                    handleTpl();
-                    handleGithub();
-                }
-            }
-        }; 
-        $(popular_repos().init);
-    </script>
-
-        </div>
-    </div>
-
-    
-</section>
-
-<footer class="container">
-    <div class="site-footer" role="contentinfo">
-        <div class="copyright left mobile-block">
-                © 2016
-                <span title="yumemor">yumemor</span>
-                <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
-        </div>
-
-        <ul class="site-footer-links right mobile-hidden">
-            <li>
-                <a href="javascript:window.scrollTo(0,0)" >TOP</a>
-            </li>
-        </ul>
-
-        <a href="https://github.com/yumemor/hexo-theme-primer" target="_blank" aria-label="view source code">
-            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
-        </a>
-
-        <ul class="site-footer-links mobile-hidden">
-            
-                  
-                  <li>
-                    <a href="/zttblog/"  title="首页">首页</a>
-                  </li>
-            
-                  
-                  <li>
-                    <a href="/zttblog/categories/"  title="分类">分类</a>
-                  </li>
-            
-                  
-                  <li>
-                    <a href="/zttblog/open-source/"  title="开源项目">开源项目</a>
-                  </li>
-            
-                  
-                  <li>
-                    <a href="/zttblog/message/"  title="留言板">留言板</a>
-                  </li>
-            
-            <li>
-                <a href="/atom.xml">
-                    <span class="octicon octicon-rss" style="color:orange;"></span>
-                </a>
-            </li>
-        </ul>
-    </div>
+            <footer class="footer">
+    <span class="footer__copyright">
+        本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    </span>
+    <span class="footer__copyright">
+        基于 <a href="http://hexo.io">Hexo</a> 搭建，感谢 <a href="https://pages.github.com/">GitHub Pages</a> 提供免费的托管服务
+    </span>
+    <span class="footer__copyright">
+        &copy; 2016 - 本站由 <a href="/">@Longbo Ma</a> 创建,
+        使用<a href="https://github.com/lenbo-ma/hexo-theme-vno">hexo-theme-vno</a>主题,
+        修改自<a href="http://github.com/onevcat/vno" target="_blank">Vno</a>
+    </span>
 </footer>
 
+        </div>
+    </div>
 
-		<script src="/zttblog/js/geopattern.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/zttblog/js/main.js"></script>
 
-		
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		<script src="/zttblog/js/highlight.pack.js"></script>
-		<script src="/zttblog/lib/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	ga('create', 'UA-42596364-1', 'auto');
+	ga('send', 'pageview');
+</script>
 
-		<script src="/zttblog/js/index.js"></script>
-
-		 <script src="/zttblog/js/popular_repo.js"></script> 
-
-	</body>
+</body>
 </html>
