@@ -1,20 +1,244 @@
-extends partial/layout
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="webpack
+webpack即可以识别AMD commonJs ES6模块的工具，又可以进行打包同时可以建立自己的工作流（module bundler模块打包                     工具）可以用于模块的打包、压缩、混淆。2.用于javascript模块管理的两大规范： 1&amp;gt;CommonJs模块的同步加载，用于Node.js， 2&amp;gt;AMD异步加载，通过requirej">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2016/11/18/webpack/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="webpack
+webpack即可以识别AMD commonJs ES6模块的工具，又可以进行打包同时可以建立自己的工作流（module bundler模块打包                     工具）可以用于模块的打包、压缩、混淆。2.用于javascript模块管理的两大规范： 1&amp;gt;CommonJs模块的同步加载，用于Node.js， 2&amp;gt;AMD异步加载，通过requirej">
+<meta property="og:updated_time" content="2016-11-18T08:54:59.431Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="webpack
+webpack即可以识别AMD commonJs ES6模块的工具，又可以进行打包同时可以建立自己的工作流（module bundler模块打包                     工具）可以用于模块的打包、压缩、混淆。2.用于javascript模块管理的两大规范： 1&amp;gt;CommonJs模块的同步加载，用于Node.js， 2&amp;gt;AMD异步加载，通过requirej">
+<meta name="twitter:creator" content="@lazzzis">
+<link rel="publisher" href="https://plus.google.com/114550357749490779368">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="https://s18.postimg.org/k7qcci1t5/s_icon.png">
+  
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 
-block site_title
-  != page.title + " | " + config.title
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.15/css/share.min.css">
+    <style>
+        .hljs-line-numbers {
+            text-align: right;
+            border-right: 1px solid #ccc;
+            color: #999;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <link rel="stylesheet" href="/zttblog/css/style.css">
+    <link rel="stylesheet" href="/zttblog/css/code.css">
+</head>
 
-block description
-  - var desc = page.desc || page.title + ' - ' + config.author;
-  meta(name="description", content=desc)
 
-block container
-  include mixins/post
-  +post(page)
+<body>
 
-block pagination
-  include mixins/paginator
-  +post()
-  include partial/comment
+<header>
+    <div class="navbar-fixed">
+        <nav class="blue darken-3 nav-extended">
+            <div class="nav-wrapper">
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="hide-on-med-and-down">
+                    
+                        <li><a href="/" class="nav-logo">Hexo</a></li>
+                    
+                    
+                    <li><a class="" href="/zttblog/">Home</a></li>
+                    
+                    <li><a class="" href="/zttblog/archives">Archives</a></li>
+                    
+                    <li><a class="" href="/zttblog/categories">Categories</a></li>
+                    
+                    <li><a class="" href="/zttblog/tags">Tags</a></li>
+                    
+                    <li><a class="" href="/zttblog/links">Links</a></li>
+                    
+                    <li><a class="" href="/zttblog/about">About</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
 
-block copyright
-  include partial/copyright
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+        
+        <li><a class="" href="/zttblog/">Home</a></li>
+        
+        <li><a class="" href="/zttblog/archives">Archives</a></li>
+        
+        <li><a class="" href="/zttblog/categories">Categories</a></li>
+        
+        <li><a class="" href="/zttblog/tags">Tags</a></li>
+        
+        <li><a class="" href="/zttblog/links">Links</a></li>
+        
+        <li><a class="" href="/zttblog/about">About</a></li>
+        
+    </ul>
+    <!--You have to move ul out to make sure this work in mobile environment-->
+</header>
+
+
+<div class="container">
+      <article class="article-full">
+
+    <!-- Title -->
+    <h2 class="blog-item-title">
+        <a href="/zttblog/2016/11/18/webpack/">
+            
+        </a>
+    </h2>
+
+    <!-- Date and Author -->
+    <p class="blog-item-meta">
+        2016-Nov-18 16:34:26
+        
+    </p>
+
+    <!-- Content -->
+    <h1 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a><strong>webpack</strong></h1><ol>
+<li><p>webpack即可以识别AMD commonJs ES6模块的工具，又可以进行打包同时可以建立自己的工作流（module bundler模块打包                     工具）可以用于模块的打包、压缩、混淆。<br>2.用于javascript模块管理的两大规范：<br> 1&gt;CommonJs模块的同步加载，用于Node.js，<br> 2&gt;AMD异步加载，通过requirejs用于前端。<br>3.静态资源：Javascript、css、图片、Jade等。<br>4.webpack的特性：<br> 1&gt;丰富的插件–优化压缩代码<br> 2&gt;有强劲的性能–开发时打开浏览器和加载文件速度加快<br> 3&gt;loaders–将复杂依赖关系的js或者一些图片、css、编译打包成你即将部署到公网的一些文件<br> 4&gt;支持–AMD、Commonjs<br> 5&gt;减少初始化的加载时间<br> 6&gt;优化<br> 7&gt;Development Tools:支持http服务器、sourceMap<br> 8&gt;多任务、多目标<br>5.有独立配置的文件webpack.config.js<br>6.webpack使用一步IO，并且具有多级缓存<br>7.安装webpack与运行：<br> 1&gt;创建工程目录结构：<br> 01.在index.html中写入：</p>
+<pre><code>&lt;script  src=&quot;app.js&quot;&gt;&lt;/script&gt;
+</code></pre><p> 2&gt;引入webpack依赖</p>
+<pre><code>01.在工程中打开命令窗口输入命令：npm install -g webpack（下载全局的webpack）;
+02.输入命令：npm install webpack --save-dev（下载本地webpack）;
+03.输入npm info webpack（查看webpack的版本信息）；
+</code></pre><p>  3&gt;在工程中创建以下目录：</p>
+<pre><code>01.webpack.base.config.js;
+02.webpack.develop.config.js;
+03.webpack.publish.config.js;
+</code></pre><p> 4&gt;在web.develop.config.js中配置：</p>
+<pre><code>var path = require (&apos;path&apos; );
+module.exports = {
+                            entry:path. resolve( __dirname, &apos;app.js&apos;),
+      output: {
+                                path : path. resolve( __dirname, &apos;develop/js&apos;),
+             filename : &apos;bundle.js&apos; ,
+      }                                                        }
+</code></pre><p> 5&gt;在命令窗口输入webpack –config web.develop.config.js<br> 6&gt;在app.js中写入：document.getelementById（”haha”).innerHTML = “有点难度!!!”;<br> 7&gt;在package.json上写入：webpack –config web.develop.config.js<br> 9&gt;为发布目录启动服务：</p>
+<pre><code>01.在命令窗口输入：
+</code></pre><p>npm i webpack-dev-server –save<br>（安装webpack-dev- server）</p>
+<pre><code>02.在package.json上添加：&quot;develop&quot;: &quot;webpack-dev-server  --config web.develop.config.js --devtool eval --progress --colors --hot --content-base publish&quot;
+           (手动的在publish中添加index.html，并且把src=&quot;app.js&quot;改为src=&quot;bundle.js&quot;)
+              03.配置web.develop.config.js:
+</code></pre><p>var path = require (‘path’ );<br>module.exports = {<br>entry:[</p>
+<pre><code>&apos;webpack/hot/dev-server&apos; ,
+&apos;webpack-dev-server/client?http://localhost:8080&apos; ,
+path .resolve (__dirname ,&apos;app.js&apos; )
+</code></pre><p>],<br>output: {</p>
+<pre><code>path : path. resolve( __dirname, &apos;develop&apos;),
+filename : &apos;bundle.js&apos; ,
+</code></pre><p>  }<br>}1. webpack即可以识别AMD commonJs ES6模块的工具，又可以进行打包同时可以建立自己的工作流（module bundler模块打包 工具）可pt src=”bundle.js”&gt;</p>
+<pre><code>05.在命令窗口输入：npm run develop
+</code></pre></li>
+</ol>
+
+
+    <hr/>
+
+    
+        <div class="social-share" data-disabled="weibo,qzone,qq,tencent,douban,linkedin,diandian"></div>
+    
+
+    <div class="blog-post">
+
+    <!--[...]-->
+    
+    <!-- Comments -->
+</div>
+
+    <!-- Tags and Categories links -->
+
+
+</article>
+
+
+</div>
+
+
+<footer class="grey darken-3">
+    <div class="footer-link">
+        
+        <a href="https://github.com/ztt0016" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://twitter.com/lazzzis" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://www.instagram.com/lazzzis" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        
+        
+        
+        <a href="https://plus.google.com/114550357749490779368" target="_blank"><i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i>
+        
+        
+        <a href="http://music.163.com/#/user/home?id=30744948" target="_blank"><i class="fa fa-music fa-2x" aria-hidden="true"></i></a>
+        
+        
+          <a href="/atom.xml" target="_blank" title="rss_feed"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a>
+        
+    </div>
+    <div class="footer-ps">
+        <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> -
+            &copy; 2016 <a
+                    
+                    href="https://github.com/ztt0016" target="_blank"
+                    
+            > John Doe</a> - Theme <a href="https://github.com/lazzzis/hexo-theme-mls" target="_blank">MLS</a>
+        </p>
+    </div>
+</footer>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.15/js/social-share.min.js"></script>
+<script src="/zttblog/js/addition.js"></script>
+<!-- Disqus Comments -->
+
+
+
+<script>
+    // https://github.com/srobbin/jquery-backstretch
+    $.backstretch("/zttblog/css/images/background.jpg");
+
+    
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87274131-1', 'auto');
+        ga('send', 'pageview');
+    
+
+</script>
+
+
+</body>
+
+</html>
