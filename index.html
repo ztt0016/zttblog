@@ -1,77 +1,76 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <meta charset="utf-8">
-  
-  
-
-  
-  
-  
-  
-  
+  <meta charset="utf-8" />
   
   <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-  
-  
-    <link rel="icon" href="/zttblog/css/images/favicon.ico">
-  
-  <link rel="stylesheet" href="/zttblog/css/style.css">
+  <meta name="author" content="John Doe" />
+
   
 
   
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  
+  <meta property="og:site_name" content="Hexo" />
+
+  
+  
+
+  
+    <meta property="og:image" content="undefined" />
+  
+
+  
+  <link href="/zttblog/css/images/favicon.ico" rel="icon" />
+  
+
+  <link rel="alternate" href="/zttblog/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="/zttblog/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+
   <!-- baidu webmaster push -->
   <script src='//push.zhanzhang.baidu.com/push.js'></script>
+
 </head>
-<body class="home blog custom-background custom-font-enabled single-author">
-  <div id="page" class="hfeed site">
-      <header id="masthead" class="site-header" role="banner">
-    <hgroup>
-      <h1 class="site-title">
-        <a href="/zttblog/" title="Hexo" rel="home">Hexo</a>
-      </h1>
-      
-        <script type="text/javascript" src="http://api.hitokoto.us/rand?encode=js&charset=utf-8"></script>
-        <h2 class="site-description"><script>hitokoto();</script></h2>
-      
-    </hgroup>
 
-    <nav id="site-navigation" class="main-navigation" role="navigation">
-            <button class="menu-toggle">菜单</button>
-            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
-            <div class="menu-main-container">
-                <ul id="menu-main" class="nav-menu">
-                
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/zttblog/">Home</a></li>
-                
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/zttblog/archives">Archives</a></li>
-                
-                </ul>
-            </div>
-    </nav>
-</header>
-      <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main">
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/zttblog/">Hexo</a></h1>
+  <h2><a href="/zttblog/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+  <article class="post">
   
-    <article id="post-webpack" class="post-webpack post type-post status-publish format-standard hentry">
-    <!---->
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-11-18T08:34:26.474Z"><a href="/zttblog/2016/11/18/webpack/">2016-11-18</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/zttblog/2016/11/18/webpack/"></a></h1>
+  
 
-      <header class="entry-header">
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://yoursite.com/zttblog/2016/11/18/webpack/" data-id="ciw1io6qf00014kqoby2vi64t" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
+    </header>
+    <div class="entry">
       
         <h1 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a><strong>webpack</strong></h1><ol>
 <li><p>webpack即可以识别AMD commonJs ES6模块的工具，又可以进行打包同时可以建立自己的工作流（module bundler模块打包                     工具）可以用于模块的打包、压缩、混淆。<br>2.用于javascript模块管理的两大规范：<br> 1&gt;CommonJs模块的同步加载，用于Node.js，<br> 2&gt;AMD异步加载，通过requirejs用于前端。<br>3.静态资源：Javascript、css、图片、Jade等。<br>4.webpack的特性：<br> 1&gt;丰富的插件–优化压缩代码<br> 2&gt;有强劲的性能–开发时打开浏览器和加载文件速度加快<br> 3&gt;loaders–将复杂依赖关系的js或者一些图片、css、编译打包成你即将部署到公网的一些文件<br> 4&gt;支持–AMD、Commonjs<br> 5&gt;减少初始化的加载时间<br> 6&gt;优化<br> 7&gt;Development Tools:支持http服务器、sourceMap<br> 8&gt;多任务、多目标<br>5.有独立配置的文件webpack.config.js<br>6.webpack使用一步IO，并且具有多级缓存<br>7.安装webpack与运行：<br> 1&gt;创建工程目录结构：<br> 01.在index.html中写入：</p>
@@ -111,37 +110,40 @@ filename : &apos;bundle.js&apos; ,
 </ol>
 
       
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/zttblog/2016/11/18/webpack/">
-    <time datetime="2016-11-18T08:34:26.474Z" class="entry-date">
-        2016-11-18
-    </time>
-</a>
+    </div>
     
-    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
     </footer>
+  </div>
 </article>
 
 
 
 
 
-
+  <article class="post">
   
-    <article id="post-hello-world" class="post-hello-world post type-post status-publish format-standard hentry">
-    <!---->
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-11-17T02:28:39.959Z"><a href="/zttblog/2016/11/17/hello-world/">2016-11-17</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/zttblog/2016/11/17/hello-world/"></a></h1>
+  
 
-      <header class="entry-header">
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://yoursite.com/zttblog/2016/11/17/hello-world/" data-id="ciw1io6pz00004kqozuwc85x9" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
+    </header>
+    <div class="entry">
       
         <h1 id="git远程提交"><a href="#git远程提交" class="headerlink" title="git远程提交"></a>git远程提交</h1><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
 <li>建一个项目，在项目中打开命令窗口，输入git init对git进行初始化</li>
@@ -158,17 +160,19 @@ filename : &apos;bundle.js&apos; ,
 </ol>
 
       
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/zttblog/2016/11/17/hello-world/">
-    <time datetime="2016-11-17T02:28:39.959Z" class="entry-date">
-        2016-11-17
-    </time>
-</a>
+    </div>
     
-    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
     </footer>
+  </div>
 </article>
 
 
@@ -176,68 +180,67 @@ filename : &apos;bundle.js&apos; ,
 
 
 
+<nav id="pagination">
   
-  
-
+</nav>
 </div></div>
-        <div id="secondary" class="widget-area" role="complementary">
-  
-    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
-    <div>
-        <input type="text" value="" name="s" id="s" />
-        <input type="submit" id="searchsubmit" value="搜索" />
-    </div>
-</form></aside>
-  
-    
-  
-    
-  
-    
-  <aside class="widget">
-    <h3 class="widget-title">Recents</h3>
-    <div class="widget-content">
-      <ul>
-        
-          <li>
-            <a href="/zttblog/2016/11/18/webpack/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/zttblog/2016/11/17/hello-world/">(no title)</a>
-          </li>
-        
-      </ul>
-    </div>
-  </aside>
-
-  
-    
-  
-    
-  
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
 </div>
-      </div>
-      <footer id="colophon" role="contentinfo">
-    <p>&copy; 2016 John Doe
-    All rights reserved.</p>
-    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
-</footer>
-    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
-<script src="/js/jquery-2.0.3.min.js"></script>
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">Neueste Artikel</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/zttblog/2016/11/18/webpack/"></a>
+      </li>
+    
+      <li>
+        <a href="/zttblog/2016/11/17/hello-world/"></a>
+      </li>
+    
+  </ul>
+</div>
 
 
-  <link rel="stylesheet" href="/zttblog/fancybox/jquery.fancybox.css">
-  <script src="/zttblog/fancybox/jquery.fancybox.pack.js"></script>
+  
 
-
-<script src="/zttblog/js/script.js"></script>
-
-<script src="/js/navigation.js"></script>
-
-<div id="bg"></div>
-
+  
+</aside>
+    <div class="clearfix"></div>
   </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  <p>
+  
+  &copy; 2016 John Doe
+  
+  All rights reserved.</p>
+  <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</div>
+<div class="clearfix"></div>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></footer>
+  <script src="/zttblog/js/jquery.imagesloaded.min.js"></script>
+<script src="/zttblog/js/gallery.js"></script>
+
+
+<link rel="stylesheet" href="/zttblog/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/zttblog/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id='bg'></div>
 </body>
 </html>
