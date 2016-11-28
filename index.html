@@ -62,52 +62,61 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-11-18T08:34:26.474Z"><a href="/zttblog/2016/11/18/webpack/">2016-11-18</a></time>
+        <time datetime="2016-11-28T06:24:00.584Z"><a href="/zttblog/2016/11/28/angular/">2016-11-28</a></time>
       
       
   
-    <h1 class="title"><a href="/zttblog/2016/11/18/webpack/"></a></h1>
+    <h1 class="title"><a href="/zttblog/2016/11/28/angular/"></a></h1>
   
 
     </header>
     <div class="entry">
       
-        <h1 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a><strong>webpack</strong></h1><ol>
-<li><p>webpack即可以识别AMD commonJs ES6模块的工具，又可以进行打包同时可以建立自己的工作流（module bundler模块打包                     工具）可以用于模块的打包、压缩、混淆。<br>2.用于javascript模块管理的两大规范：<br> 1&gt;CommonJs模块的同步加载，用于Node.js，<br> 2&gt;AMD异步加载，通过requirejs用于前端。<br>3.静态资源：Javascript、css、图片、Jade等。<br>4.webpack的特性：<br> 1&gt;丰富的插件–优化压缩代码<br> 2&gt;有强劲的性能–开发时打开浏览器和加载文件速度加快<br> 3&gt;loaders–将复杂依赖关系的js或者一些图片、css、编译打包成你即将部署到公网的一些文件<br> 4&gt;支持–AMD、Commonjs<br> 5&gt;减少初始化的加载时间<br> 6&gt;优化<br> 7&gt;Development Tools:支持http服务器、sourceMap<br> 8&gt;多任务、多目标<br>5.有独立配置的文件webpack.config.js<br>6.webpack使用一步IO，并且具有多级缓存<br>7.安装webpack与运行：<br> 1&gt;创建工程目录结构：<br> 01.在index.html中写入：</p>
-<pre><code>&lt;script  src=&quot;app.js&quot;&gt;&lt;/script&gt;
-</code></pre><p> 2&gt;引入webpack依赖</p>
-<pre><code>01.在工程中打开命令窗口输入命令：npm install -g webpack（下载全局的webpack）;
-02.输入命令：npm install webpack --save-dev（下载本地webpack）;
-03.输入npm info webpack（查看webpack的版本信息）；
-</code></pre><p>  3&gt;在工程中创建以下目录：</p>
-<pre><code>01.webpack.base.config.js;
-02.webpack.develop.config.js;
-03.webpack.publish.config.js;
-</code></pre><p> 4&gt;在web.develop.config.js中配置：</p>
-<pre><code>var path = require (&apos;path&apos; );
-module.exports = {
-                            entry:path. resolve( __dirname, &apos;app.js&apos;),
-      output: {
-                                path : path. resolve( __dirname, &apos;develop/js&apos;),
-             filename : &apos;bundle.js&apos; ,
-      }                                                        }
-</code></pre><p> 5&gt;在命令窗口输入webpack –config web.develop.config.js<br> 6&gt;在app.js中写入：document.getelementById（”haha”).innerHTML = “有点难度!!!”;<br> 7&gt;在package.json上写入：webpack –config web.develop.config.js<br> 9&gt;为发布目录启动服务：</p>
-<pre><code>01.在命令窗口输入：
-</code></pre><p>npm i webpack-dev-server –save<br>（安装webpack-dev- server）</p>
-<pre><code>02.在package.json上添加：&quot;develop&quot;: &quot;webpack-dev-server  --config web.develop.config.js --devtool eval --progress --colors --hot --content-base publish&quot;
-           (手动的在publish中添加index.html，并且把src=&quot;app.js&quot;改为src=&quot;bundle.js&quot;)
-              03.配置web.develop.config.js:
-</code></pre><p>var path = require (‘path’ );<br>module.exports = {<br>entry:[</p>
-<pre><code>&apos;webpack/hot/dev-server&apos; ,
-&apos;webpack-dev-server/client?http://localhost:8080&apos; ,
-path .resolve (__dirname ,&apos;app.js&apos; )
-</code></pre><p>],<br>output: {</p>
-<pre><code>path : path. resolve( __dirname, &apos;develop&apos;),
-filename : &apos;bundle.js&apos; ,
-</code></pre><p>  }<br>}1. webpack即可以识别AMD commonJs ES6模块的工具，又可以进行打包同时可以建立自己的工作流（module bundler模块打包 工具）可pt src=”bundle.js”&gt;</p>
-<pre><code>05.在命令窗口输入：npm run develop
-</code></pre></li>
-</ol>
+        
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-11-18T08:34:26.474Z"><a href="/zttblog/2016/11/18/webpack/">2016-11-18</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/zttblog/2016/11/18/webpack/">AngularJS--双向数据绑定</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>[toc]</p>
+<h1 id="AngularJS-四大特性"><a href="#AngularJS-四大特性" class="headerlink" title="AngularJS 四大特性"></a>AngularJS 四大特性</h1><h2 id="1-MVC模型"><a href="#1-MVC模型" class="headerlink" title="(1)MVC模型"></a>(1)MVC模型</h2><p>Model：即业务数据   $scope.xx  $rootScope.xx<br>View：即业务数据的呈现   HTML + ngXxx<br>Controller：负责操作业务数据   .controller(‘’, function(){})</p>
+<h2 id="2-双向数据绑定"><a href="#2-双向数据绑定" class="headerlink" title="(2)双向数据绑定"></a>(2)双向数据绑定</h2><p>方向1：Model绑定到View，只要Model变View随着变<br>方向2：View(表单控件)绑定到Model，只要View变Model随着变</p>
+<h2 id="3-依赖注入"><a href="#3-依赖注入" class="headerlink" title="(3)依赖注入"></a>(3)依赖注入</h2><h3 id="如何解决依赖关系："><a href="#如何解决依赖关系：" class="headerlink" title="如何解决依赖关系："></a>如何解决依赖关系：</h3><p>(1)主动创建方式<br>  var c1 = new Car(); //主动创建依赖对象<br>  var d1 = new Driver( c1 );  //传递依赖对象<br>  (2)被动注入(Injection)方式<br>module.controller(‘控制器’, function($scope, $interval){})</p>
+<h3 id="可以被注入的对象——所有的service-provider对象都可以被注入"><a href="#可以被注入的对象——所有的service-provider对象都可以被注入" class="headerlink" title="可以被注入的对象——所有的service/provider对象都可以被注入"></a>可以被注入的对象——所有的service/provider对象都可以被注入</h3><p> (1)$rootScope：在多个控制器间共享数据的服务<br>  (2)$interval：提供周期性定时器服务<br>  (3)$timeout：<br>  (4)$log：提供五个基本的日志输出服务<br>  (5)$http：提供异步HTTP请求（AJAX）服务<br>用法： $http({method:’GET’, url:’/xx.php’}).<br>success(fn).<br>error(fn);<br>简化版：  $http.get(‘url’).success(fn);<br>$http.post(‘url’, data).success(fn);<br>  (6)$location</p>
+<h2 id="4-模块化设计"><a href="#4-模块化设计" class="headerlink" title="(4)模块化设计"></a>(4)模块化设计</h2><h2 id="5-AngularJS提供的模块——ngRoute"><a href="#5-AngularJS提供的模块——ngRoute" class="headerlink" title="(5)AngularJS提供的模块——ngRoute"></a>(5)AngularJS提供的模块——ngRoute</h2><p>Route：路由，通过某条线路找到目标内容。<br>  ngRoute模块的用途：就是根据浏览器中URL中的一个特殊的地址标记(形如#/xxx)，查找到该标记所对应的模板页面，并异步加载到当前页面的ngView指令中。使用步骤：<br>  (1)创建唯一完整的HTML页面，其中声明一个容器，ngView指令。引入angular.js和angular-route.js<br>  (2)创建多个模板页面(习惯上放在一个特别的目录下，如tpl)<br>  (3)创建Module，声明依赖于ng和ngRoute两个模块。<br>  (4)在Module中配置路由字典。</p>
+<h2 id="6-ngRoute模块中的伪页面跳转"><a href="#6-ngRoute模块中的伪页面跳转" class="headerlink" title="(6)ngRoute模块中的伪页面跳转"></a>(6)ngRoute模块中的伪页面跳转</h2><p>(1)通过超链接跳转<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`&lt;<span class="literal">a</span> href=<span class="string">"#/路由地址"</span>&gt;`    #不能省</div></pre></td></tr></table></figure></p>
+<p>(2)通过JS跳转<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;button ng-click=<span class="string">"jump()"</span>&gt;&lt;/button&gt;</div><div class="line">$scope.jump = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</div><div class="line"><span class="comment">//location.href="2.html"        不能使用多页面应用中的跳转</span></div><div class="line">$location.path(<span class="string">'/路由地址'</span>);    <span class="comment">//#不能有</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -200,7 +209,11 @@ filename : &apos;bundle.js&apos; ,
   <ul class="entry">
     
       <li>
-        <a href="/zttblog/2016/11/18/webpack/"></a>
+        <a href="/zttblog/2016/11/28/angular/"></a>
+      </li>
+    
+      <li>
+        <a href="/zttblog/2016/11/18/webpack/">AngularJS--双向数据绑定</a>
       </li>
     
       <li>
