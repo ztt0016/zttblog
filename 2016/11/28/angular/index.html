@@ -3,16 +3,20 @@
 <head>
   <meta charset="utf-8" />
   
-  <title>Hexo</title>
+  <title>AngularJS--双向数据绑定 | Hexo</title>
   <meta name="author" content="John Doe" />
 
+  
+  <meta name="description" content="[toc]
+AngularJS 四大特性(1)MVC模型Model：即业务数据   $scope.xx  $rootScope.xxView：即业务数据的呈现   HTML + ngXxxController：负责操作业务数据   .controller(‘’, function(){})
+(2)双" />
   
 
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  
+  <meta property="og:title" content="AngularJS--双向数据绑定" />
   <meta property="og:site_name" content="Hexo" />
 
   
@@ -65,13 +69,21 @@
       
       
   
-    <h1 class="title"></h1>
+    <h1 class="title">AngularJS--双向数据绑定</h1>
   
 
     </header>
     <div class="entry">
       
-        
+        <p>[toc]</p>
+<h1 id="AngularJS-四大特性"><a href="#AngularJS-四大特性" class="headerlink" title="AngularJS 四大特性"></a>AngularJS 四大特性</h1><h2 id="1-MVC模型"><a href="#1-MVC模型" class="headerlink" title="(1)MVC模型"></a>(1)MVC模型</h2><p>Model：即业务数据   $scope.xx  $rootScope.xx<br>View：即业务数据的呈现   HTML + ngXxx<br>Controller：负责操作业务数据   .controller(‘’, function(){})</p>
+<h2 id="2-双向数据绑定"><a href="#2-双向数据绑定" class="headerlink" title="(2)双向数据绑定"></a>(2)双向数据绑定</h2><p>方向1：Model绑定到View，只要Model变View随着变<br>方向2：View(表单控件)绑定到Model，只要View变Model随着变</p>
+<h2 id="3-依赖注入"><a href="#3-依赖注入" class="headerlink" title="(3)依赖注入"></a>(3)依赖注入</h2><h3 id="如何解决依赖关系："><a href="#如何解决依赖关系：" class="headerlink" title="如何解决依赖关系："></a>如何解决依赖关系：</h3><p>(1)主动创建方式<br>    var c1 = new Car(); //主动创建依赖对象<br>    var d1 = new Driver( c1 );  //传递依赖对象<br>  (2)被动注入(Injection)方式<br>module.controller(‘控制器’, function($scope, $interval){})</p>
+<h3 id="可以被注入的对象——所有的service-provider对象都可以被注入"><a href="#可以被注入的对象——所有的service-provider对象都可以被注入" class="headerlink" title="可以被注入的对象——所有的service/provider对象都可以被注入"></a>可以被注入的对象——所有的service/provider对象都可以被注入</h3><p> (1)$rootScope：在多个控制器间共享数据的服务<br>  (2)$interval：提供周期性定时器服务<br>  (3)$timeout：<br>  (4)$log：提供五个基本的日志输出服务<br>  (5)$http：提供异步HTTP请求（AJAX）服务<br>用法： $http({method:’GET’, url:’/xx.php’}).<br>success(fn).<br>error(fn);<br>简化版：  $http.get(‘url’).success(fn);<br>$http.post(‘url’, data).success(fn);<br>  (6)$location</p>
+<h2 id="4-模块化设计"><a href="#4-模块化设计" class="headerlink" title="(4)模块化设计"></a>(4)模块化设计</h2><h2 id="5-AngularJS提供的模块——ngRoute"><a href="#5-AngularJS提供的模块——ngRoute" class="headerlink" title="(5)AngularJS提供的模块——ngRoute"></a>(5)AngularJS提供的模块——ngRoute</h2><p>Route：路由，通过某条线路找到目标内容。<br>  ngRoute模块的用途：就是根据浏览器中URL中的一个特殊的地址标记(形如#/xxx)，查找到该标记所对应的模板页面，并异步加载到当前页面的ngView指令中。使用步骤：<br>  (1)创建唯一完整的HTML页面，其中声明一个容器，ngView指令。引入angular.js和angular-route.js<br>  (2)创建多个模板页面(习惯上放在一个特别的目录下，如tpl)<br>  (3)创建Module，声明依赖于ng和ngRoute两个模块。<br>  (4)在Module中配置路由字典。</p>
+<h2 id="6-ngRoute模块中的伪页面跳转"><a href="#6-ngRoute模块中的伪页面跳转" class="headerlink" title="(6)ngRoute模块中的伪页面跳转"></a>(6)ngRoute模块中的伪页面跳转</h2><p>(1)通过超链接跳转<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`&lt;<span class="literal">a</span> href=<span class="string">"#/路由地址"</span>&gt;`    #不能省</div></pre></td></tr></table></figure></p>
+<p>(2)通过JS跳转<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;button ng-click=<span class="string">"jump()"</span>&gt;&lt;/button&gt;</div><div class="line">$scope.jump = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</div><div class="line"><span class="comment">//location.href="2.html"        不能使用多页面应用中的跳转</span></div><div class="line">$location.path(<span class="string">'/路由地址'</span>);    <span class="comment">//#不能有</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
       
     </div>
     
@@ -94,7 +106,7 @@
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="search" name="q" results="0" placeholder="Buscar">
     <input type="hidden" name="q" value="site:yoursite.com">
   </form>
 </div>
@@ -103,15 +115,15 @@
 
   
 <div class="widget tag">
-  <h3 class="title">Neueste Artikel</h3>
+  <h3 class="title">Entradas Recientes</h3>
   <ul class="entry">
     
       <li>
-        <a href="/zttblog/2016/11/28/angular/"></a>
+        <a href="/zttblog/2016/11/28/angular/">AngularJS--双向数据绑定</a>
       </li>
     
       <li>
-        <a href="/zttblog/2016/11/18/webpack/">AngularJS--双向数据绑定</a>
+        <a href="/zttblog/2016/11/18/webpack/"></a>
       </li>
     
       <li>
